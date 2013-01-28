@@ -1,5 +1,5 @@
 import java.util.Random;
-
+// @BC: Clean, well designed superclass here. Nicely done.
 public abstract class Employee {
 	private double effectivenessMultiplier;
 	private double baseWeeklySalary;
@@ -17,6 +17,7 @@ public abstract class Employee {
 	
 	public abstract void work();
 	
+	// @BC: Looking at how this is used in all of your subclasses, would you reconsider how to implement your mutator method(s) here?
 	public void setEffectivenessMultiplier(double em) {
 		effectivenessMultiplier = em;
 	}
